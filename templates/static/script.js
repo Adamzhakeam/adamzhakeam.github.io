@@ -406,7 +406,7 @@ document.getElementById('loginForm').onsubmit = async function(event) {
         if (result.status) {
             console.log('>>>>>>>>token', result.token);
             localStorage.setItem('token', result.token); // Store the token in local storage
-            window.location.href = '/bms/templates/usersDashboard.html'; // Redirect to the dashboard
+            window.location.href = '/templates/usersDashboard.html'; // Redirect to the dashboard
         } else {
             alert(result.log);  // Show an error message if login fails
         }
