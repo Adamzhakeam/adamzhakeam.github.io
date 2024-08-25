@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   function fetchTotalAmountPaid() {
-    fetch('http://127.0.0.1:5000/fetchAllSales', {
+    fetch('http://ec2-44-202-224-55.compute-1.amazonaws.com/fetchAllSales', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   function fetchTotalSales() {
-    fetch('http://127.0.0.1:5000/fetchAllSales', {
+    fetch('http://ec2-44-202-224-55.compute-1.amazonaws.com/fetchAllSales', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   function fetchTotalAmountSold() {
-    fetch('http://127.0.0.1:5000/fetchAllProductSales', {
+    fetch('http://ec2-44-202-224-55.compute-1.amazonaws.com/fetchAllProductSales', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function fetchProductsInStock() {
-    fetch('http://127.0.0.1:5000/fetchAllProducts', {
+    fetch('http://ec2-44-202-224-55.compute-1.amazonaws.com/fetchAllProducts', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   function fetchProductsWithWarningStock() {
-    fetch('http://127.0.0.1:5000/fetchAllProductsWithWarningStock', {
+    fetch('http://ec2-44-202-224-55.compute-1.amazonaws.com/fetchAllProductsWithWarningStock', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function fetchDebtorsData() {
-    fetch('http://127.0.0.1:5000/fetchAllUnclearedCredits', {
+    fetch('http://ec2-44-202-224-55.compute-1.amazonaws.com/fetchAllUnclearedCredits', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

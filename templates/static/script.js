@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     others: {'userName':'nakanjako'} // Replace with actual data
                                 };
                         
-                                fetch('http://127.0.0.1:5000/addSale', {
+                                fetch('http://ec2-44-202-224-55.compute-1.amazonaws.com/addSale', {
                                     method: 'POST',
                                     headers: {
                                         'Content-Type': 'application/json'
@@ -347,7 +347,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                             others: {'name':'thickthighs'} // Replace with actual data
                                         }));
                         
-                                        fetch('http://127.0.0.1:5000/addSingleProductSale', {
+                                        fetch('http://ec2-44-202-224-55.compute-1.amazonaws.com/addSingleProductSale', {
                                             method: 'POST',
                                             headers: {
                                                 'Content-Type': 'application/json'
@@ -394,7 +394,7 @@ document.getElementById('loginForm').onsubmit = async function(event) {
 
     // Try to send the POST request to the /login endpoint
     try {
-        let response = await fetch('http://127.0.0.1:5000/login', {  // Adjust URL as needed
+        let response = await fetch('http://ec2-44-202-224-55.compute-1.amazonaws.com/login', {  // Adjust URL as needed
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
