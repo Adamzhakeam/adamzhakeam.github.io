@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   function fetchTotalAmountPaid() {
-    fetch('http://ec2-44-202-224-55.compute-1.amazonaws.com/fetchAllSales', {
+    fetch('https://acutiva.duckdns.org/fetchAllSales', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   function fetchTotalSales() {
-    fetch('http://ec2-44-202-224-55.compute-1.amazonaws.com/fetchAllSales', {
+    fetch('https://acutiva.duckdns.org/fetchAllSales', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   function fetchTotalAmountSold() {
-    fetch('http://ec2-44-202-224-55.compute-1.amazonaws.com/fetchAllProductSales', {
+    fetch('https://acutiva.duckdns.org/fetchAllProductSales', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function fetchProductsInStock() {
-    fetch('http://ec2-44-202-224-55.compute-1.amazonaws.com/fetchAllProducts', {
+    fetch('https://acutiva.duckdns.org/fetchAllProducts', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   function fetchProductsWithWarningStock() {
-    fetch('http://ec2-44-202-224-55.compute-1.amazonaws.com/fetchAllProductsWithWarningStock', {
+    fetch('https://acutiva.duckdns.org/fetchAllProductsWithWarningStock', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function fetchDebtorsData() {
-    fetch('http://ec2-44-202-224-55.compute-1.amazonaws.com/fetchAllUnclearedCredits', {
+    fetch('https://acutiva.duckdns.org/fetchAllUnclearedCredits', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         try {
-            const response = await fetch('http://127.0.0.1:5000/createUnit', {
+            const response = await fetch('https://acutiva.duckdns.org/createUnit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         try {
-            const response = await fetch('http://127.0.0.1:5000/fetchUnit', {
+            const response = await fetch('https://acutiva.duckdns.org/fetchUnit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch all units and display them
     async function fetchAllUnits() {
         try {
-            const response = await fetch('http://127.0.0.1:5000/fetchAllUnits', {
+            const response = await fetch('https://acutiva.duckdns.org/fetchAllUnits', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

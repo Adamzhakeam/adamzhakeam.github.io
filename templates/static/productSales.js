@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const salesTableBody = document.getElementById('salesTableBody');
 
     fetchAllSalesBtn.addEventListener('click', () => {
-        fetchSales('http://127.0.0.1:5000/fetchAllProductSales');
+        fetchSales('https://acutiva.duckdns.org/fetchAllProductSales');
     });
 
     fetchSpecificSalesBtn.addEventListener('click', () => {
         const saleDate = prompt('Enter specific sale date (YYYY-MM-DD):');
         if (saleDate) {
-            fetchSales('http://127.0.0.1:5000/fetchSpecificProductSales', { saleDate: saleDate });
+            fetchSales('https://acutiva.duckdns.org/fetchSpecificProductSales', { saleDate: saleDate });
         }
     });
 
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const dateFrom = prompt('Enter start date (YYYY-MM-DD):');
         const dateTo = prompt('Enter end date (YYYY-MM-DD):');
         if (dateFrom && dateTo) {
-            fetchSales('http://127.0.0.1:5000/fetchSpecificProductSalesFromTo', { dateFrom: dateFrom, dateTo: dateTo });
+            fetchSales('https://acutiva.duckdns.org/fetchSpecificProductSalesFromTo', { dateFrom: dateFrom, dateTo: dateTo });
         }
     });
 
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const productIds = [...new Set(sales.map(sale => sale.productId))];
         console.log('Product IDs:', productIds); // Debugging log
         Promise.all(productIds.map(productId => 
-            fetch('http://127.0.0.1:5000/fetchSpecificProductById', {
+            fetch('https://acutiva.duckdns.org/fetchSpecificProductById', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

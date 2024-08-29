@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentCreditId, currentSaleId, currentAmountInDebt, currentPaymentStatus;
 
     function fetchCredits() {
-        fetch('http://127.0.0.1:5000/fetchAllCredits', {
+        fetch('https://acutiva.duckdns.org/fetchAllCredits', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function editCredit(payload) {
-        fetch('http://127.0.0.1:5000/editCredit', {
+        fetch('https://acutiva.duckdns.org/editCredit', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

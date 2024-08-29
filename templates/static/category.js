@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Form Payload:', payload); // Debugging line
 
         try {
-            const response = await fetch('http://127.0.0.1:5000/createCategory', {
+            const response = await fetch('https://acutiva.duckdns.org/createCategory', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to fetch all categories and populate the table
     function fetchAllCategories() {
-        fetch('http://127.0.0.1:5000/fetchAllCategories', {
+        fetch('https://acutiva.duckdns.org/fetchAllCategories', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

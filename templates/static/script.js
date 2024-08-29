@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let selectedProducts = []; // This will store the selected products for the sale
 
     // Fetch products from the backend
-    fetch('http://127.0.0.1:5000/fetchAllProducts', {
+    fetch('https://acutiva.duckdns.org/fetchAllProducts', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
             others: {'userName':'nakanjako'} // Replace with actual data
         };
 
-        fetch('http://127.0.0.1:5000/addSale', {
+        fetch('https://acutiva.duckdns.org/addSale', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     others: {'name':'thickthighs'} // Replace with actual data
                 }));
 
-                fetch('http://127.0.0.1:5000/addSingleProductSale', {
+                fetch('https://acutiva.duckdns.org/addSingleProductSale', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             let selectedProducts = []; // This will store the selected products for the sale
                         
                             // Fetch products from the backend
-                            fetch('http://127.0.0.1:5000/fetchAllProducts', {
+                            fetch('https://acutiva.duckdns.org/fetchAllProducts', {
                                 method: 'POST',
                                 headers: {
                                     'Content-Type': 'application/json'
@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     others: {'userName':'nakanjako'} // Replace with actual data
                                 };
                         
-                                fetch('http://ec2-44-202-224-55.compute-1.amazonaws.com/addSale', {
+                                fetch('https://acutiva.duckdns.org/addSale', {
                                     method: 'POST',
                                     headers: {
                                         'Content-Type': 'application/json'
@@ -347,7 +347,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                             others: {'name':'thickthighs'} // Replace with actual data
                                         }));
                         
-                                        fetch('http://ec2-44-202-224-55.compute-1.amazonaws.com/addSingleProductSale', {
+                                        fetch('https://acutiva.duckdns.org/addSingleProductSale', {
                                             method: 'POST',
                                             headers: {
                                                 'Content-Type': 'application/json'
@@ -394,7 +394,7 @@ document.getElementById('loginForm').onsubmit = async function(event) {
 
     // Try to send the POST request to the /login endpoint
     try {
-        let response = await fetch('http://ec2-44-202-224-55.compute-1.amazonaws.com/login', {  // Adjust URL as needed
+        let response = await fetch('https://acutiva.duckdns.org/login', {  // Adjust URL as needed
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

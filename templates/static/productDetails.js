@@ -11,7 +11,7 @@ let currentPage = 1;
 // Fetch all products and populate the table with a limit of 4 items per page
 async function fetchAllProducts(page) {
     try {
-        const response = await fetch('http://127.0.0.1:5000/fetchAllProducts', {
+        const response = await fetch('https://acutiva.duckdns.org/fetchAllProducts', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -62,13 +62,13 @@ async function searchProducts() {
 
     let endpoint, payload;
     if (searchType === 'name') {
-        endpoint = 'http://127.0.0.1:5000/fetchSpecificProduct';
+        endpoint = 'https://acutiva.duckdns.org/fetchSpecificProduct';
         payload = { productName: query };
     } else if (searchType === 'serialNumber') {
-        endpoint = 'http://127.0.0.1:5000/fetchSpecificProductByPertNumber';
+        endpoint = 'https://acutiva.duckdns.org/fetchSpecificProductByPertNumber';
         payload = { productSerialNumber: query };
     } else if (searchType === 'category') {
-        endpoint = 'http://127.0.0.1:5000/fetchSpecificProductByCategory';
+        endpoint = 'https://acutiva.duckdns.org/fetchSpecificProductByCategory';
         payload = { productCategory: query };
     }
 
@@ -96,7 +96,7 @@ async function searchProducts() {
 async function openEditModal(productId) {
     console.log('Opening edit modal for productId:', productId); // Debugging log
     try {
-        const response = await fetch('http://127.0.0.1:5000/fetchSpecificProductById', {
+        const response = await fetch('https://acutiva.duckdns.org/fetchSpecificProductById', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -147,7 +147,7 @@ async function updateProduct(event) {
     };
 
     try {
-        const response = await fetch('http://127.0.0.1:5000/editProduct', {
+        const response = await fetch('https://acutiva.duckdns.org/editProduct', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
