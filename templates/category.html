@@ -117,12 +117,12 @@
                         userInfoElement.textContent = `Logged in as: ${result.userName}`;
                     } else {
                         alert(result.log);
-                        window.location.href = '/templates/index.html';
+                        window.location.href = '/index.html';
                     }
                 } catch (error) {
                     console.error('Error:', error);
                     alert('Failed to fetch user data');
-                    window.location.href = '/templates/index.html';
+                    window.location.href = '/index.html';
                 }
             }
     
