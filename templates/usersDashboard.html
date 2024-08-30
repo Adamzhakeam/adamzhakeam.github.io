@@ -187,7 +187,7 @@
               <h3>Roles</h3>
            </a>
            <a href="#">
-              <span class="material-symbols-sharp">reports</span>
+              <span class="material-symbols-sharp">Reports</span>
               <h3></h3>
            </a>
            <a href="#">
@@ -199,6 +199,12 @@
               <h3>Add Product</h3>
            </a>
            <a href="#">
+            <script>
+              document.getElementById('logout').onclick = function() {
+                localStorage.removeItem('token');  // Clear the token from local storage
+                window.location.href = '/index.html';  // Redirect to the login page
+            };
+            </script>
               <span class="material-symbols-sharp">logout </span>
               <h3>logout</h3>
            </a>
