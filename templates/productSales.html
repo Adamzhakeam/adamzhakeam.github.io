@@ -145,49 +145,8 @@
                 };
             </script>
         </body>
-        </html> <body>
-        <div class="header">
-            <h1 id="greeting"></h1>
-            <div class="user-info" id="user-info"></div>
-            <div class="buttons">
-                <button onclick="goHome()">Home</button>
-                <button onclick="logout()">Logout</button>
-            </div>
-        </div>
+        </html> 
     
-        <script>
-            // JavaScript for greeting according to the time of day and displaying user info
-            document.addEventListener('DOMContentLoaded', () => {
-                const userName = "John Doe"; // Replace with the actual user's name
-                const greetingElement = document.getElementById('greeting');
-                const userInfoElement = document.getElementById('user-info');
-                const currentHour = new Date().getHours();
-                let greeting;
-    
-                if (currentHour < 12) {
-                    greeting = "Good Morning";
-                } else if (currentHour < 18) {
-                    greeting = "Good Afternoon";
-                } else {
-                    greeting = "Good Evening";
-                }
-    
-                greetingElement.textContent = `${greeting},`;
-                userInfoElement.textContent = `Logged in as: ${userName}`;
-            });
-    
-            function goHome() {
-                // Redirect to home page
-                window.location.href = 'file:///templates/usersDashboard.html'; // Adjust URL as needed
-            }
-    
-            function logout() {
-                // Redirect to logout page or perform logout action
-                window.location.href = '/logout'; // Adjust URL as needed
-            }
-        </script>
-    </body>
-    </html>
 </head>
 <body id="productDetails">
     <div class="container">

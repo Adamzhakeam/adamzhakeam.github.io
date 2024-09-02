@@ -1,4 +1,4 @@
-/* styles.css */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -51,6 +51,7 @@ button:hover {
     background-color: #45a049;
 }
 
+/* Modal Styles */
 .modal {
     display: none;
     position: fixed;
@@ -92,38 +93,54 @@ form {
     max-width: 400px;
     margin: auto;
 }
-/* Modal styles
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px;
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    form {
+        width: 100%;
+        padding: 0 10px;
+    }
 }
 
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
 
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
+    table, th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
 
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+    .modal-content {
+        margin: 20% auto;
+        padding: 10px;
+        width: 95%;
+    }
 }
- */
