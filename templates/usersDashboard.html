@@ -198,7 +198,7 @@
               <span class="material-symbols-sharp">add </span>
               <h3>Add Product</h3>
            </a>
-           <a href="#">
+           
             <script>
               document.getElementById('logout').onclick = function() {
                 localStorage.removeItem('token');  // Clear the token from local storage
@@ -206,8 +206,8 @@
             };
             </script>
               <span class="material-symbols-sharp">logout </span>
-              <h3>logout</h3>
-           </a>
+              <h3 name="logout" id="logout" class="logout">logout</h3>
+            
              
 
 
@@ -287,11 +287,13 @@
                 <span class="material-symbols-sharp">stacked_line_chart</span>
                 <div class="middle">
  
+                  <a href="/templates/productSales.html">
                   <div class="left" href="/templates/productSales.html">
                     
                     <h3>Products Sold</h3>
                     <h1 id="totalAmountOfProductsSold">$25,024</h1>
                   </div>
+                  </a>
                    <div class="progress">
                        <svg>
                           <circle  r="30" cy="40" cx="40"></circle>
