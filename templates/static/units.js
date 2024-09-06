@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault();
         const formData = new FormData(createUnitForm);
         const payload = {
-            'others':{'username':'iamGonaBeRich'}
+            'others':{'username':'useronaBeRich'}
         };
 
         formData.forEach((value, key) => {

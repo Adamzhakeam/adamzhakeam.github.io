@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const salePayload = {
             grandTotal: selectedProducts.reduce((total, product) => total + product.total, 0),
             numberOfItemsSold: selectedProducts.length,
-            soldBy: 'brownthighs', // Replace with actual data
+            soldBy: 'user', // Replace with actual data
             soldTo: soldTo,
             paymentType: paymentType,
             paymentStatus: paymentStatus,
@@ -315,7 +315,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 const salePayload = {
                                     grandTotal: selectedProducts.reduce((total, product) => total + product.total, 0),
                                     numberOfItemsSold: selectedProducts.length,
-                                    soldBy: 'brownthighs', // Replace with actual data
+                                    soldBy: 'user', // Replace with actual data
                                     soldTo: soldTo,
                                     paymentType: paymentType,
                                     paymentStatus: paymentStatus,

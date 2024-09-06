@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault();
         const formData = new FormData(createCategoryForm);
         const payload = {
-            others:{'userName':"iwantPussy"}
+            others:{'userName':"user"}
         };
 
         // Manually add form data to payload
