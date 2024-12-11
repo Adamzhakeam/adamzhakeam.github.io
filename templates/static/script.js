@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let selectedProducts = []; // This will store the selected products for the sale
 
     // Fetch products from the backend
-    fetch('http://127.0.0.1:5000/fetchAllProducts', {
+    fetch('http://192.168.137.156:5000/fetchAllProducts', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
             others: {'userName':'nakanjako'} // Replace with actual data
         };
 
-        fetch('http://127.0.0.1:5000/addSale', {
+        fetch('http://192.168.137.156:5000/addSale', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     others: {'name':'thickthighs'} // Replace with actual data
                 }));
 
-                fetch('http://127.0.0.1:5000/addSingleProductSale', {
+                fetch('http://192.168.137.156:5000/addSingleProductSale', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             let selectedProducts = []; // This will store the selected products for the sale
                         
                             // Fetch products from the backend
-                            fetch('http://127.0.0.1:5000/fetchAllProducts', {
+                            fetch('http://192.168.137.156:5000/fetchAllProducts', {
                                 method: 'POST',
                                 headers: {
                                     'Content-Type': 'application/json'
@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     others: {'userName':'nakanjako'} // Replace with actual data
                                 };
                         
-                                fetch('http://127.0.0.1:5000/addSale', {
+                                fetch('http://192.168.137.156:5000/addSale', {
                                     method: 'POST',
                                     headers: {
                                         'Content-Type': 'application/json'
@@ -349,7 +349,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                             others: {'name':'thickthighs'} // Replace with actual data
                                         }));
                         
-                                        fetch('http://127.0.0.1:5000/addSingleProductSale', {
+                                        fetch('http://192.168.137.156:5000/addSingleProductSale', {
                                             method: 'POST',
                                             headers: {
                                                 'Content-Type': 'application/json'
@@ -396,7 +396,7 @@ document.getElementById('loginForm').onsubmit = async function(event) {
 
     // Try to send the POST request to the /login endpoint
     try {
-        let response = await fetch('http://127.0.0.1:5000/login', {  // Adjust URL as needed
+        let response = await fetch('http://192.168.137.156:5000/login', {  // Adjust URL as needed
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

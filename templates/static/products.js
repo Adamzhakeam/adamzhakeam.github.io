@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function fetchUnits() {
-    fetch('http://127.0.0.1:5000/fetchAllUnits', {
+    fetch('http://192.168.137.156:5000/fetchAllUnits', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -23,7 +23,7 @@ function fetchUnits() {
 }
 
 function fetchCategories() {
-    fetch('http://127.0.0.1:5000/fetchAllCategories', {
+    fetch('http://192.168.137.156:5000/fetchAllCategories', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -75,7 +75,7 @@ function registerProduct() {
         // Add other fields as needed
     };
 
-    fetch('http://127.0.0.1:5000/registerProduct', {
+    fetch('http://192.168.137.156:5000/registerProduct', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

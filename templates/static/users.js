@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const userTableBody = document.getElementById('userTableBody');
 
     // Fetch all roles and populate dropdown
-    fetch('http://127.0.0.1:5000/fetchAllRoles', {
+    fetch('http://192.168.137.156:5000/fetchAllRoles', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Add the selected roleId to the payload
         payload['roleId'] = roleSelect.value;
 
-        fetch('http://127.0.0.1:5000/addUser', {
+        fetch('http://192.168.137.156:5000/addUser', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to fetch all users and populate the table
     function fetchAllUsers() {
-        fetch('http://127.0.0.1:5000/fetchAllUsers', {
+        fetch('http://192.168.137.156:5000/fetchAllUsers', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to fetch role details by roleId
     function fetchRoleById(roleId) {
-        return fetch('http://127.0.0.1:5000/fetchRole', {
+        return fetch('http://192.168.137.156:5000/fetchRole', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
