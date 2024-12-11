@@ -1,5 +1,7 @@
 
 // ----------the section below is responsible for sales route handling---------
+// https://acutiva.duckdns.org
+
 // Fetch products and populate dropdown on page load
 document.addEventListener('DOMContentLoaded', () => {
     // Elements
@@ -15,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let selectedProducts = []; // This will store the selected products for the sale
 
     // Fetch products from the backend
-    fetch('https://acutiva.duckdns.org/fetchAllProducts', {
+    fetch('http://127.0.0.1:5000/fetchAllProducts', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -143,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
             others: {'userName':'nakanjako'} // Replace with actual data
         };
 
-        fetch('https://acutiva.duckdns.org/addSale', {
+        fetch('http://127.0.0.1:5000/addSale', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -167,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     others: {'name':'thickthighs'} // Replace with actual data
                 }));
 
-                fetch('https://acutiva.duckdns.org/addSingleProductSale', {
+                fetch('http://127.0.0.1:5000/addSingleProductSale', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -195,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             let selectedProducts = []; // This will store the selected products for the sale
                         
                             // Fetch products from the backend
-                            fetch('https://acutiva.duckdns.org/fetchAllProducts', {
+                            fetch('http://127.0.0.1:5000/fetchAllProducts', {
                                 method: 'POST',
                                 headers: {
                                     'Content-Type': 'application/json'
@@ -323,7 +325,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     others: {'userName':'nakanjako'} // Replace with actual data
                                 };
                         
-                                fetch('https://acutiva.duckdns.org/addSale', {
+                                fetch('http://127.0.0.1:5000/addSale', {
                                     method: 'POST',
                                     headers: {
                                         'Content-Type': 'application/json'
@@ -347,7 +349,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                             others: {'name':'thickthighs'} // Replace with actual data
                                         }));
                         
-                                        fetch('https://acutiva.duckdns.org/addSingleProductSale', {
+                                        fetch('http://127.0.0.1:5000/addSingleProductSale', {
                                             method: 'POST',
                                             headers: {
                                                 'Content-Type': 'application/json'
@@ -394,7 +396,7 @@ document.getElementById('loginForm').onsubmit = async function(event) {
 
     // Try to send the POST request to the /login endpoint
     try {
-        let response = await fetch('https://acutiva.duckdns.org/login', {  // Adjust URL as needed
+        let response = await fetch('http://127.0.0.1:5000/login', {  // Adjust URL as needed
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

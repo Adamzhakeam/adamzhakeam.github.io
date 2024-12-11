@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function fetchUnits() {
-    fetch('https://acutiva.duckdns.org/fetchAllUnits', {
+    fetch('http://127.0.0.1:5000/fetchAllUnits', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -23,7 +23,7 @@ function fetchUnits() {
 }
 
 function fetchCategories() {
-    fetch('https://acutiva.duckdns.org/fetchAllCategories', {
+    fetch('http://127.0.0.1:5000/fetchAllCategories', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -75,7 +75,7 @@ function registerProduct() {
         // Add other fields as needed
     };
 
-    fetch('https://acutiva.duckdns.org/registerProduct', {
+    fetch('http://127.0.0.1:5000/registerProduct', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

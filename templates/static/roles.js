@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             others: { 'userName': 'camero' }
         };
 
-        fetch('https://acutiva.duckdns.org/createRole', {
+        fetch('http://127.0.0.1:5000/createRole', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function fetchAllRoles() {
-        fetch('https://acutiva.duckdns.org/fetchAllRoles', {
+        fetch('http://127.0.0.1:5000/fetchAllRoles', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

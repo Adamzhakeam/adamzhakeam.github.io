@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const userTableBody = document.getElementById('userTableBody');
 
     // Fetch all roles and populate dropdown
-    fetch('https://acutiva.duckdns.org/fetchAllRoles', {
+    fetch('http://127.0.0.1:5000/fetchAllRoles', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Add the selected roleId to the payload
         payload['roleId'] = roleSelect.value;
 
-        fetch('https://acutiva.duckdns.org/addUser', {
+        fetch('http://127.0.0.1:5000/addUser', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to fetch all users and populate the table
     function fetchAllUsers() {
-        fetch('https://acutiva.duckdns.org/fetchAllUsers', {
+        fetch('http://127.0.0.1:5000/fetchAllUsers', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to fetch role details by roleId
     function fetchRoleById(roleId) {
-        return fetch('https://acutiva.duckdns.org/fetchRole', {
+        return fetch('http://127.0.0.1:5000/fetchRole', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   function fetchTotalAmountPaid() {
-    fetch('https://acutiva.duckdns.org/fetchAllSales', {
+    fetch('http://127.0.0.1:5000/fetchAllSales', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   function fetchTotalSales() {
-    fetch('https://acutiva.duckdns.org/fetchAllSales', {
+    fetch('http://127.0.0.1:5000/fetchAllSales', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   function fetchTotalAmountSold() {
-    fetch('https://acutiva.duckdns.org/fetchAllProductSales', {
+    fetch('http://127.0.0.1:5000/fetchAllProductSales', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function fetchProductsInStock() {
-    fetch('https://acutiva.duckdns.org/fetchAllProducts', {
+    fetch('http://127.0.0.1:5000/fetchAllProducts', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   function fetchProductsWithWarningStock() {
-    fetch('https://acutiva.duckdns.org/fetchAllProductsWithWarningStock', {
+    fetch('http://127.0.0.1:5000/fetchAllProductsWithWarningStock', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function fetchDebtorsData() {
-    fetch('https://acutiva.duckdns.org/fetchAllUnclearedCredits', {
+    fetch('http://127.0.0.1:5000/fetchAllUnclearedCredits', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
